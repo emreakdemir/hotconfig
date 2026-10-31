@@ -5,7 +5,8 @@
         <IsPackable>true</IsPackable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <EnablePackageValidation>true</EnablePackageValidation>
-        <!-- First release: no baseline. After 1.0.0 ships, set PackageValidationBaselineVersion to the last release. -->
+        <!-- Baseline: the last release on nuget.org. Raise it after each release. -->
+        <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion>
         <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeInternalAssemblies</TargetsForTfmSpecificBuildOutput>
     </PropertyGroup>
 

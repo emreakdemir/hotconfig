@@ -31,4 +31,4 @@ jobs:
         run: dotnet test HotConfig.sln --no-build -c Release --verbosity normal
 
       - name: Pack (validation only)
-        run: dotnet pack HotConfig/HotConfig.csproj --no-build -c Release --output ./nuget
+        run: dotnet pack HotConfig/HotConfig.csproj -c Release --output ./nuget
